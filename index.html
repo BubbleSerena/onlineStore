@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Grocery online store</title>
+  <link rel="stylesheet" href="productInfo.css">
+  <script src="JS/display.js"></script>  
+</head>
+
+
+<body>
+  <image class="logo" src="logo.png" ><br>
+<table style="width:100%">
+  <tr>
+    <td rowspan="2" style="width:50%" class="map">
+      
+      <div class="categories">
+        <img id="pic" src="Images/Categories.png" alt="" usemap="#Images/Categories">
+        <map name="Images/Categories" id="Categories">
+        
+          <area target="_self" coords="2,75,85,110" shape="rect" onmouseover="displayCategories('Images/FrozenFood')">
+        
+          <area target="_self" coords="160,76,239,110" shape="rect" onmouseover="displayCategories('Images/FreshFood')">
+          <area target="_self" coords="311,76,395,110" shape="rect" onmouseover="displayCategories('Images/Beverages')">
+          <area target="_self" coords="475,76,539,110" shape="rect" onmouseover="displayCategories('Images/HomeHealth')">
+          <area target="_self" coords="607,76,690,110" shape="rect" onmouseover="displayCategories('Images/PetFood')">
+          
+        </map>
+
+      </div>
+
+      <div class="product">
+        <div>
+          <map name="Images/FrozenFood" id="FrozenFood"><!-- Image Map for FrozenFood with links to display product information-->
+           <area coords="0,0,688,78" shape="rect" onmouseover="closeCategories()">
+            
+            <area coords="4,284,83,316" shape="rect" href="productInfo.php?product_id=1000" target="database">
+            <area coords="93,284,190,316" shape="rect" href="productInfo.php?product_id=1001" target="database">
+                        
+            <area coords="201,284,300,316" shape="rect" href="productInfo.php?product_id=1003" target="database">
+                        
+            <area coords="368,284,460,316" shape="rect" href="productInfo.php?product_id=1004" target="database">
+            <area coords="474,284,568,316" shape="rect" href="productInfo.php?product_id=1005" target="database">
+                        
+            <area coords="620,284,710,316" shape="rect" href="productInfo.php?product_id=1002" target="database">
+
+        </div>
+
+      </div>
+      
+
+        
+        <map name="Images/FreshFood" id="FreshFood"><!-- Image Map for FreshFood with links to display productInfoed information-->
+          <area coords="0,0,688,78" shape="rect" onmouseover="closeCategories()">
+                      
+          <area coords="2,168,98,200" shape="rect" href="productInfo.php?product_id=3002" target="database">
+          <area coords="115,168,211,200" shape="rect" href="productInfo.php?product_id=3006" target="database">
+          <area coords="226,168,321,200" shape="rect" href="productInfo.php?product_id=3007" target="database">
+          <area coords="338,168,433,200" shape="rect" href="productInfo.php?product_id=3004" target="database">
+          <area coords="449,168,542,200" shape="rect" href="productInfo.php?product_id=3003" target="database">
+          <area coords="666,168,760,200" shape="rect" href="productInfo.php?product_id=3005" target="database">
+          <area coords="501,256,595,286" shape="rect" href="productInfo.php?product_id=3000" target="database">
+          <area coords="613,256,707,286" shape="rect" href="productInfo.php?product_id=3001" target="database">      
+        </map>
+        
+        <map name="Images/Beverages" id="Beverages"><!-- Image Map for Beverages with links to display productInfoed information-->
+          <area coords="0,0,688,78" shape="rect" onmouseover="closeCategories()">
+
+          <area coords="3,226,100,257" shape="rect" href="productInfo.php?product_id=4004" target="database">
+          <area coords="110,226,205,257" shape="rect" href="productInfo.php?product_id=4003" target="database">
+          
+          <area coords="274,224,366,257" shape="rect" href="productInfo.php?product_id=4000" target="database">
+          <area coords="381,224,475,257" shape="rect" href="productInfo.php?product_id=4001" target="database">
+          <area coords="488,224,584,257" shape="rect" href="productInfo.php?product_id=4002" target="database">
+          
+          <area coords="559,151,658,185" shape="rect" href="productInfo.php?product_id=4005" target="database">          
+                        
+        </map>
+            
+        <map name="Images/HomeHealth" id="HomeHealth"><!-- Image Map for with links to display productInfoed information-->
+          <area coords="0,0,688,78" shape="rect" onmouseover="closeCategories()">
+
+          <area coords="5,158,98,192" shape="rect" href="productInfo.php?product_id=2002" target="database">
+          <area coords="311,158,404,192" shape="rect" href="productInfo.php?product_id=2005" target="database">
+          <area coords="603,158,695,192" shape="rect" href="productInfo.php?product_id=2006" target="database">
+                        
+          <area coords="74,237,164,268" shape="rect" href="productInfo.php?product_id=2000" target="database">
+          <area coords="205,237,296,268" shape="rect" href="productInfo.php?product_id=2001" target="database">
+                        
+          <area coords="396,236,484,268" shape="rect" href="productInfo.php?product_id=2003" target="database">
+          <area coords="519,237,611,268" shape="rect" href="productInfo.php?product_id=2004" target="database">          
+                              
+                    
+        </map>
+        
+        <map name="Images/PetFood" id="PetFood"><!-- Image Map for PetFood with links to display productInfoed information-->
+          <area coords="0,0,688,78" shape="rect" onmouseover="closeCategories()">
+                      
+          <area coords="147,158,240,190" shape="rect" href="productInfo.php?product_id=5002" target="database">
+          <area coords="315,158,406,190" shape="rect" href="productInfo.php?product_id=5003" target="database">
+          <area coords="606,158,698,190" shape="rect" href="productInfo.php?product_id=5004" target="database">
+                        
+          <area coords="398,237,489,267" shape="rect" href="productInfo.php?product_id=5001" target="database">
+          <area coords="520,237,611,267" shape="rect" href="productInfo.php?product_id=5000" target="database">
+                        
+        </map>
+    </td>
+    <!-- right Top Frame  -->
+    <td> 
+      <div>
+        <h2>Product Information</h2>
+        <iframe frameBorder="0" name="database" src="productInfo.php" class="info" >
+        </iframe>
+      </div>
+    </td>
+    </tr>
+    <tr>
+    <!--right Bottum Frame  -->   
+    <td> 
+      <div>
+        <h2>Shopping Cart</h2>
+
+        <iframe frameBorder="0" name="cart" src="cart.php" class="cart">
+        </iframe>
+      </div>
+
+    </td>
+  </tr>
+
+</table>
+
+</body>
+</html>
